@@ -32,7 +32,7 @@ input_json = '''
         "phone": "+77777777777",
         "adress": "st. Mira, 287, Moscow"
     },
-    "products": ["Candy", "Carrot", "Potato", 1],
+    "products": ["Candy", "Carrot", "Potato", "candy"],
     "delivery_adress": "st. Mira, 211, Ekaterinburg",
     "delivery_date": "2021-01-01:16:00",
     "delivery_code": "#232nkF3fAdn"
@@ -82,7 +82,7 @@ def main():
     except ValidationError as e:
         print(e.json())
     else:
-        print(order)
+        print(order.client)
         # print(client)
 
 
