@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: tiangolo/uvicorn-gunicorn-fastapi
+    container_name: app
+    volumes:
+      - ./app:/app
+    ports:
+      - "127.0.0.5:8000:80"

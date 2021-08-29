@@ -31,6 +31,7 @@ def main():
     # print(bitrix_deal_userfield_delete_unused())
     # print('delivery'.upper())
     # print("some str".find("stra") == -1)
+    pass
 
 
 if __name__ == '__main__':
